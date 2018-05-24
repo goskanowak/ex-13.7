@@ -8,12 +8,8 @@ fs.readdir('./', 'utf-8', function(err, files) {
         if (err) throw err;
         console.log('Save!'.green);
         fs.readFile('./addFile.txt', 'utf-8', function(err, data) {
-              if (err) throw err;
             console.log('Data after saving'.blue)
             console.log(data);
         });
     });
 });
-
-
-
